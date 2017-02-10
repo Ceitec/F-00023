@@ -17,7 +17,7 @@
 #define	BUFFER_CHAR_PACKET	18 // Musí být násobky 9!!!
 
 // Adresa modulu 
-#define MODULE_ADDRESS 101
+#define MODULE_ADDRESS 100
 
 // Deska Slave - Základní firmware pro Slave zaøízení
 #define MODULE_TYPE	200	

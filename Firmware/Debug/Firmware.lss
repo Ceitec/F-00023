@@ -628,7 +628,7 @@ uint8_t TB_Process( void )
  3d0:	f1 e0       	ldi	r31, 0x01	; 1
  3d2:	80 83       	st	Z, r24
 				TB_Buf_Out.b[1] = MODULE_ADDRESS;					// Jaká adresa modulu
- 3d4:	85 e6       	ldi	r24, 0x65	; 101
+ 3d4:	84 e6       	ldi	r24, 0x64	; 100
  3d6:	81 83       	std	Z+1, r24	; 0x01
 				TB_Buf_Out.b[2] = MODULE_TYPE;								// Jaký modul odpovídá
  3d8:	88 ec       	ldi	r24, 0xC8	; 200
@@ -738,7 +738,7 @@ void TB_Init( void )
 		TB_gbparam.baud = 0;
  464:	11 82       	std	Z+1, r1	; 0x01
 		TB_gbparam.address = MODULE_ADDRESS;
- 466:	85 e6       	ldi	r24, 0x65	; 101
+ 466:	84 e6       	ldi	r24, 0x64	; 100
  468:	82 83       	std	Z+2, r24	; 0x02
 		TB_gbparam.telegram_pause_time = 0;
  46a:	13 82       	std	Z+3, r1	; 0x03
